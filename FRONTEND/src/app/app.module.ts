@@ -13,6 +13,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { LoginComponent } from './components/login/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import {HttpClientModule} from '@angular/common/http';
+import { EducacionComponent } from './components/educacion/educacion.component';
+import { InterceptorProvider } from './service/interceptor-service';
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import {HttpClientModule} from '@angular/common/http';
     HeaderComponent,
     SkillsComponent,
     LoginComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    EducacionComponent
    
   ],
   imports: [
@@ -35,7 +38,7 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [InterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
