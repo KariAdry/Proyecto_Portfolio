@@ -1,1 +1,27 @@
-<p>nueva-experiencia works!</p>
+<!--<p>nueva-experiencia works!</p>!-->
+
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreExp">Empleo</label>
+                    <input type="text" class="form-control" id="nombreExp" name="nombreExp" 
+                       [(ngModel)]="nombreExp"
+                        required>
+                </div>
+            </form>
+
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="descripcionExp">Descripcion de la tarea</label>
+                    <input type="text" class="form-control" id="descripcionExp" name="DescripcionExp"
+                        [(ngModel)="descripcionExp" required]>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
