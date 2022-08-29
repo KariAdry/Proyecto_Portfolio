@@ -26,7 +26,16 @@ public save(experienciaLab : ExperienciaLab):Observable<any>
 {
   return this.httpClient.post<any>(this.expURL + 'create', experienciaLab);
 }
+
+public update(id:number, experienciaLab:ExperienciaLab):Observable<any>
+{
+  return this.httpClient.put<any>(this.expURL + `update/${id}`,experienciaLab);
+}
   
+public delete(id:number):Observable<any>
+{
+  return this.httpClient.delete<any>(this.expURL + `delete/${id}`);
+}
 }  
   
 

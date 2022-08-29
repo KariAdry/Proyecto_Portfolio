@@ -1,21 +1,12 @@
-export class ExperienciaLab {
+export class ExperienciaLab
+ {
     id? : number;
     nombreExp : string;
-    descripcioExp : string;
+    descripcionExp : string;
 
 constructor(nombreExp:string,descripcionExp:string)
 {
      this.nombreExp = nombreExp;
-     this.descripcioExp = descripcionExp;
+     this.descripcionExp = descripcionExp;
 }
-
-
-
-
-
-
-
-
-
-
 }

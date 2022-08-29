@@ -17,6 +17,7 @@ import { EducacionComponent } from './components/educacion/educacion.component';
 import { InterceptorProvider } from './service/interceptor-service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { InterceptorProvider } from './service/interceptor-service';
     SkillsComponent,
     LoginComponent,
     PortfolioComponent,
-    EducacionComponent
+    EducacionComponent,
+   
    
   ],
   imports: [
