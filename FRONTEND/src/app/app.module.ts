@@ -15,6 +15,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import {HttpClientModule} from '@angular/common/http';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { InterceptorProvider } from './service/interceptor-service';
+import { NuevaExperienciaComponent } from './components/experiencia-laboral/nueva-experiencia.component';
 
 
 
@@ -31,7 +32,7 @@ import { InterceptorProvider } from './service/interceptor-service';
     LoginComponent,
     PortfolioComponent,
     EducacionComponent,
-   
+    NuevaExperienciaComponent
    
   ],
   imports: [
