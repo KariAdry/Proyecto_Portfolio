@@ -8,7 +8,7 @@ import { ExperienciaLab } from '../model/experiencia-lab';
   providedIn: 'root'
 })
 export class ServExperienciaService {
-expURL= "http://localhost:8080/explab"
+expURL= 'http://localhost:8080/explab/'
 
   constructor(private httpClient: HttpClient){}
 
@@ -29,14 +29,16 @@ public save(experienciaLab : ExperienciaLab):Observable<any>
 
 public update(id:number, experienciaLab:ExperienciaLab):Observable<any>
 {
-  return this.httpClient.put<any>(this.expURL + `update/${id}`,experienciaLab);
+  return this.httpClient.put<any>(this.expURL + 'update/${id}',experienciaLab);
 }
   
 public delete(id:number):Observable<any>
 {
-  return this.httpClient.delete<any>(this.expURL + `delete/${id}`);
+  return this.httpClient.delete<any>(this.expURL + 'delete/${id}');
 }
 }  
+
+
   
 
 

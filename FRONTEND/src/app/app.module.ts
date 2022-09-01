@@ -16,6 +16,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { InterceptorProvider } from './service/interceptor-service';
 import { NuevaExperienciaComponent } from './components/experiencia-laboral/nueva-experiencia.component';
+import { EdicionExperienciaComponent } from './components/experiencia-laboral/edicion-experiencia.component';
 
 
 
@@ -32,7 +33,8 @@ import { NuevaExperienciaComponent } from './components/experiencia-laboral/nuev
     LoginComponent,
     PortfolioComponent,
     EducacionComponent,
-    NuevaExperienciaComponent
+    NuevaExperienciaComponent,
+    EdicionExperienciaComponent
    
   ],
   imports: [

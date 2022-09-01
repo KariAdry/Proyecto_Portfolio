@@ -10,23 +10,23 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ExperienciaLaboralComponent implements OnInit {
 
-  exper :ExperienciaLab[] =[];
+  exper :ExperienciaLab[] = [];
   constructor(private servExperiencia : ServExperienciaService, private tokenService : TokenService) { }
 
-  isLoged=false;
+  isLogged=false;
 
   ngOnInit(): void 
   {this.cargarExperiencia();
     if(this.tokenService.getToken())
     {
-      this.isLoged = true;
+      this.isLogged = true;
     }else
     {
-      this.isLoged =false
+      this.isLogged =false
     }
   }
 
-  cargarExperiencia():void
+  cargarExperiencia(): void
   {
     this.servExperiencia.lista().subscribe
     (data =>{this.exper = data;})

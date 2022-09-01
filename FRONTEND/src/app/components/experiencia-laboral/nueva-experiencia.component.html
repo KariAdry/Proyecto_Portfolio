@@ -3,23 +3,22 @@
 <div class="container">
     <div class="row">
         <div>
+            
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreExp">Empleo</label>
                     <input type="text" class="form-control" id="nombreExp" name="nombreExp" 
-                       [(ngModel)]="nombreExp"
+                    [(ngModel)]="nombreExp" 
                         required>
                 </div>
-            </form>
-
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+           
                 <div class="form-group">
                     <label for="descripcionExp">Descripcion de la tarea</label>
-                    <input type="text" class="form-control" id="descripcionExp" name="DescripcionExp"
-                        [(ngModel)="descripcionExp" required]>
+                    <input type="text" class="form-control" id="descripcionExp" name="descripcionExp"
+                        [(ngModel)]="descripcionExp" required>
 
                 </div>
-
+<button class="btn btn-danger">Agregar nueva-experiencia</button>
             </form>
         </div>
     </div>
