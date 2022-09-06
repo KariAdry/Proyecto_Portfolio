@@ -10,7 +10,7 @@ const routes: Routes =
 {path:'', component: PortfolioComponent},
 {path:'login', component:LoginComponent},
 {path:'exp',component:NuevaExperienciaComponent},
-{path:'editarexp',component:EdicionExperienciaComponent}
+{path:'editexp/:id',component:EdicionExperienciaComponent}
 ];
 
 @NgModule({

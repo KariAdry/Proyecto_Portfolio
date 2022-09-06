@@ -1,31 +1,44 @@
 <div class="row">
-  <div class="table">
+  
     <h1>Experiencia laboral</h1>
     <div class="col-lg-2">
-     
+
     </div>
     <div class="col-lg-12">
-      
-        <table>
-          <tbody>
-            <tr *ngFor="let ExperienciaLab of exper">
-              <td>
-                <h4>{{ExperienciaLab.nombreExp}}</h4>
-              </td><br>
-              <td>{{ExperienciaLab.descripcionExp}}</td>
-              <td><i class="bi bi-pen"></i>EDICION</td>
-              <td>BORRAR</td>
-            </tr>
-          </tbody>
-        </table>
-        <button type="button" class="btn btn-success" routerLink="/exp" *ngIf="isLogged">Nueva experiencia</button>
-      </div>
-    
+
+      <table class="table">
+        <tbody>
+          <tr *ngFor="let ExperienciaLab of exper">
+            <td>
+              <h4>{{ExperienciaLab.nombreExp}}</h4>
+            </td>
+            <td>{{ExperienciaLab.descripcionExp}}</td>
+
+          
+            <td *ngIf="isLogged">
+              <button class="btn btn-info" routerLink="/editexp/{{ExperienciaLab.id}}">
+            
+              <i class="bi bi-pen"></i>EDICION</button>
+            </td>
+          
+
+            <td *ngIf="isLogged">
+              <button class="btn btn-danger" (click)="borrarExp(ExperienciaLab.id)">
+              <i class="bi bi-trash"></i>BORRAR</button>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-success" routerLink="/exp" *ngIf="isLogged">Nueva experiencia</button>
+    </div>
+
   </div>
-</div>
 
 
-  <!-- <p class="lead"></p>
+
+
+
+<!-- <p class="lead"></p>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Profesora de Ingles </li>
           <p>A la edad de 16 años empece como ayudante de mi profesora de ingles. A la edad de 18 años empece a dar clases<br>

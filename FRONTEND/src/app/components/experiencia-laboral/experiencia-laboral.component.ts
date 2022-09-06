@@ -10,26 +10,36 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ExperienciaLaboralComponent implements OnInit {
 
-  exper :ExperienciaLab[] = [];
-  constructor(private servExperiencia : ServExperienciaService, private tokenService : TokenService) { }
+  exper: ExperienciaLab[] = [];
+  constructor(private servExperiencia: ServExperienciaService, private tokenService: TokenService) { }
 
-  isLogged=false;
+  isLogged = false;
 
-  ngOnInit(): void 
-  {this.cargarExperiencia();
-    if(this.tokenService.getToken())
-    {
+  ngOnInit(): void {
+    this.cargarExperiencia();
+    if (this.tokenService.getToken()) {
       this.isLogged = true;
-    }else
-    {
-      this.isLogged =false
+    } else {
+      this.isLogged = false
     }
   }
 
-  cargarExperiencia(): void
-  {
+  cargarExperiencia(): void {
     this.servExperiencia.lista().subscribe
-    (data =>{this.exper = data;})
+      (data => { this.exper = data; })
+  }
+
+ borrarExp(id? : number){
+    if (id != undefined) 
+    {
+      this.servExperiencia.delete(id).subscribe
+      (
+        data => {
+          this.cargarExperiencia();}, 
+        err => {
+          alert("La experiencia no fue eliminada");}
+      )
+    }
   }
 
 }
