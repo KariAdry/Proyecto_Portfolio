@@ -21,8 +21,9 @@ descripcionExp : string = '';
 
   onCreate ():void
 {
-  const exper = new ExperienciaLab (this.nombreExp, this.descripcionExp);
-  this.servExperiencia.save(exper).subscribe (data => {
+  const expe = new ExperienciaLab (this.nombreExp, this.descripcionExp);
+  this.servExperiencia.save(expe).subscribe
+   (data => {
     alert("Experiencia agregada");
     this.router.navigate(['']);
   }, err => {

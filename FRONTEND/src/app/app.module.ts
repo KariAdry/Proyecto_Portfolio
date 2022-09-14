@@ -17,6 +17,8 @@ import { EducacionComponent } from './components/educacion/educacion.component';
 import { InterceptorProvider } from './service/interceptor-service';
 import { NuevaExperienciaComponent } from './components/experiencia-laboral/nueva-experiencia.component';
 import { EdicionExperienciaComponent } from './components/experiencia-laboral/edicion-experiencia.component';
+import { NuevaInstruccionComponent } from './components/educacion/nueva-instruccion.component';
+import { EditarEducacionComponent } from './components/educacion/editar-educacion.component';
 
 
 
@@ -34,8 +36,9 @@ import { EdicionExperienciaComponent } from './components/experiencia-laboral/ed
     PortfolioComponent,
     EducacionComponent,
     NuevaExperienciaComponent,
-    EdicionExperienciaComponent
-   
+    EdicionExperienciaComponent,
+    NuevaInstruccionComponent,
+    EditarEducacionComponent   
   ],
   imports: [
     BrowserModule,

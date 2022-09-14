@@ -10,7 +10,7 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ExperienciaLaboralComponent implements OnInit {
 
-  exper: ExperienciaLab[] = [];
+  expe: ExperienciaLab[] = [];
   constructor(private servExperiencia: ServExperienciaService, private tokenService: TokenService) { }
 
   isLogged = false;
@@ -20,13 +20,13 @@ export class ExperienciaLaboralComponent implements OnInit {
     if (this.tokenService.getToken()) {
       this.isLogged = true;
     } else {
-      this.isLogged = false
+      this.isLogged = false;
     }
   }
 
   cargarExperiencia(): void {
     this.servExperiencia.lista().subscribe
-      (data => { this.exper = data; })
+      (data => { this.expe = data; })
   }
 
  borrarExp(id? : number){
