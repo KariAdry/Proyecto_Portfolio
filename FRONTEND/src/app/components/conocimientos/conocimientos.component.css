@@ -1,0 +1,55 @@
+
+
+.container{
+    margin-top: 20px;
+   
+}
+
+#boton
+{
+ background-color: chocolate;
+}
+
+#ingles 
+{
+    background-color: bisque;
+    
+}      
+
+
+.progress-bar 
+{
+   color: rgb(20, 21, 20);
+    transition: width 0.50s;
+    background: rgb(18, 232, 64);
+}
+
+#Css
+{
+    background-color: bisque;
+}
+
+#Html
+{
+    background-color: bisque;
+}
+
+#Bootstrap
+{
+    background-color: bisque;
+}
+
+#Angular
+{
+    background-color: bisque;
+}
+
+#BaseDeDatos
+{
+    background-color: bisque;
+}
+
+#SpringBoot
+{
+    background-color: bisque;
+}

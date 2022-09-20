@@ -6,6 +6,7 @@ import { EdicionExperienciaComponent } from './components/experiencia-laboral/ed
 import { NuevaExperienciaComponent } from './components/experiencia-laboral/nueva-experiencia.component';
 import { LoginComponent } from './components/login/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 const routes: Routes = 
 [
@@ -19,6 +20,7 @@ const routes: Routes =
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  
 })
 export class AppRoutingModule { }

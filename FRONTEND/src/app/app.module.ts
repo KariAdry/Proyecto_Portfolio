@@ -9,7 +9,6 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SkillsComponent } from './components/skills/skills.component';
 import { LoginComponent } from './components/login/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import {HttpClientModule} from '@angular/common/http';
@@ -19,10 +18,11 @@ import { NuevaExperienciaComponent } from './components/experiencia-laboral/nuev
 import { EdicionExperienciaComponent } from './components/experiencia-laboral/edicion-experiencia.component';
 import { NuevaInstruccionComponent } from './components/educacion/nueva-instruccion.component';
 import { EditarEducacionComponent } from './components/educacion/editar-educacion.component';
-
+import { ConocimientosComponent } from './components/conocimientos/conocimientos.component';
 
 
 @NgModule({
+
   declarations: [
     AppComponent,
     BannerComponent,
@@ -31,22 +31,24 @@ import { EditarEducacionComponent } from './components/educacion/editar-educacio
     ProyectosComponent,
     FooterComponent,
     HeaderComponent,
-    SkillsComponent,
     LoginComponent,
     PortfolioComponent,
     EducacionComponent,
     NuevaExperienciaComponent,
     EdicionExperienciaComponent,
     NuevaInstruccionComponent,
-    EditarEducacionComponent   
+    EditarEducacionComponent,
+    ConocimientosComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+       
   ],
   providers: [InterceptorProvider],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

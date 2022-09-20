@@ -1,0 +1,88 @@
+<!--<p>conocimientos works!</p>-->
+
+<div class="container">
+    <h2>Barras de progreso de conocimientos</h2>
+    <p>Ingles</p>
+    <div id="ingles"  class="progress progress-bar">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100" style="width:95% ">
+            95%
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <p>Css</p>
+    <div id="Css" class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100" style="width:70%">
+            70%
+        </div>
+    </div>
+</div>
+<div class="container">
+    <p>Html</p>
+    <div id="Html"  class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100" style="width:69%">
+            69%
+        </div>
+    </div>
+</div>
+<div class="container">
+    <p>Bootstrap</p>
+    <div id="Bootstrap" class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100" style="width:80%">
+            80%
+        </div>
+    </div>
+</div>
+<div class="container">
+    <p>Angular</p>
+    <div id="Angular" class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100" style="width:85%">
+            85%
+        </div>
+    </div>
+</div>
+<div class="container">
+    <p>Base de datos(MySql)</p>
+    <div id="BaseDeDatos" class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100" style="width:75%">
+           75%
+        </div>
+    </div>
+</div>
+<div class="container">
+<p>SpringBoot</p>
+<div id="SpringBoot" class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:77%">
+        77%
+    </div>
+</div>
+<br>
+<br>
+
+<input type="button" id="boton" value="Recargar">
+</div>
+
+<script type="text/javascript">
+    
+
+    window.onload = function()
+    {
+        animateprogress = ("#ingles",95);
+    
+    }
+
+    document.querySelector("boton").addEventListener("click",function()
+    {
+        animateprogress = ("#ingles",95);
+    });
+
+</script>
+
