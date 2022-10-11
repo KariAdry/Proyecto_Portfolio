@@ -46,7 +46,7 @@ export class EducacionComponent implements OnInit {
       {
         this.cargarEducacion();
       },err => {
-        alert("La experiencia no fue eliminada");
+        alert("La instruccion no fue eliminada");
       }
       )
     }

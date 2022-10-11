@@ -13,6 +13,7 @@
               <h4>{{ExperienciaLab.nombreExp}}</h4>
             </td>
             <td>{{ExperienciaLab.descripcionExp}}</td>
+            
 
           
             <td *ngIf="isLogged">
@@ -29,7 +30,7 @@
           </tr>
         </tbody>
       </table>
-      <button type="button" class="btn btn-success" routerLink="/exp" *ngIf="isLogged">Nueva experiencia</button>
+      <button type="button" class="btn btn-outline-success" routerLink="/exp" *ngIf="isLogged">Nueva experiencia</button>
     </div>
 
   </div>

@@ -20,17 +20,16 @@ descripcionEdu: string ='';
   onCreate(): void 
   {
     const edu = new Educacion(this.nombreEdu, this.descripcionEdu);
-    console.log(edu);
+   // console.log(edu);
 
     this.educacionService.save(edu).subscribe 
     (data =>{
       alert("Instruccion agregada");
       this.router.navigate(['']);
-            },
-       err=>{
+      }, err=>{
         alert("No se pudo cargar una instruccion");
-        //this.router.navigate(['']);
-            })
+        this.router.navigate(['']);
+      })
   }
 
 }
